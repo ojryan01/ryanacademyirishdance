@@ -1,3 +1,12 @@
-body {
-font-family: 'MyFirstFont', sans-serif;
+
+header {
+    background-color: #002bc7;
+}
+
+h1 {
+font-family: 'Assistant', sans-serif;
+font-size: 3rem;
+color: #d6e04d;
+text-align: center;
+padding: 4rem;
 }
