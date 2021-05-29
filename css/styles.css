@@ -1,12 +1,44 @@
 
-header {
-    background-color: #002bc7;
+.header, .nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f3f7;
 }
 
-h1 {
+.header {
+    justify-content: space-between;
+}
+
+.nav {
+    flex: 1;
+    justify-content: space-around;
+}
+
+
+h1 {  
 font-family: 'Assistant', sans-serif;
 font-size: 3rem;
 color: #d6e04d;
 text-align: center;
 padding: 4rem;
+background-image: url("../images/P9230932.JPG");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 480px) {
+    
 }
