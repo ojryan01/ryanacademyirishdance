@@ -1,8 +1,10 @@
 
+* {
+    box-sizing: border-box;
+}
+
 .header, .nav {
-    display: flex;
-    flex-direction: column;
-    background-color: #f2f3f7;
+    background-color: #4667eb;
 }
 
 .header {
@@ -10,17 +12,24 @@
 }
 
 .nav {
-    flex: 1;
-    justify-content: space-around;
+    padding: .25rem;
 }
 
+a {
+padding: 15px;   
+margin: 5px;
+background-color:#d6e04d;
+border-radius: 5px;
+text-align: center;
+
+}
 
 h1 {  
 font-family: 'Assistant', sans-serif;
 font-size: 3rem;
 color: #d6e04d;
 text-align: center;
-padding: 4rem;
+padding: 2rem;
 background-image: url("../images/P9230932.JPG");
 background-size: cover;
 background-repeat: no-repeat;
@@ -34,6 +43,7 @@ img {
     margin-right: auto;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    border-radius: 20px;
 }
 
 
