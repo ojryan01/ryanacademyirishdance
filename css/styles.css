@@ -24,7 +24,7 @@ text-align: center;
 
 }
 
-h1 {  
+.banner {  
 font-family: 'Assistant', sans-serif;
 font-size: 3rem;
 color: #d6e04d;
@@ -35,6 +35,10 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 
+h2 {
+    color: 
+}
+
 img {
     display: block;
     max-width: 50%;
@@ -43,7 +47,6 @@ img {
     margin-right: auto;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    border-radius: 20px;
 }
 
 

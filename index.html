@@ -25,15 +25,76 @@
             </nav>
     </header>
     
-    <h1>
+    <h1 class="banner">
         fostering integrity. <br> preserving tradition.
         </h1>
 
-    <div class = why>
+    <div class="why">
         <h1> Why irish Dance?</h1>
-        <div>Preserve Tradition</div>
+        <div><h2>CONFIDENCE</h2><p>Grace and poise, on and off stage</p>
+        </div>
+        <div><h2>DEDICATION</h2><p>Practice, achieve, repeat.</p>
+        </div>
+        <div><h2>FRIENDSHIP</h2><p>Part of something bigger</p>
+        </div>
+        <div><h2>TRADITION</h2><p>Connect with cultural and heritage</p>
+        </div>
+
         <div>Build confidence </div>
     </div>
+
+    <form action="index.html" method="post">
+        
+        <h1>Register Now</h1>
+        
+        <fieldset>
+            <legend> <span class="number">1</span>Dancer Info</legend>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="user_name">
+        <label for="age">Dancer age</label>
+        <input type="text" id="age" name="user_age">
+
+            </fieldset>
+
+        <fieldset> 
+            <legend> <span class="number">2</span>Previous Experience</legend>   
+        <label for="email">Email</label>
+        <input type="email" id="email" name="user_email"><br>
+
+        <label>Age</label>
+            <input type="radio" id="under_13" value="under_13" name="user_age">
+            <label for="under_13" class="light">Under 13</label> <br>
+
+            <input type="radio" id="over_13" value="over_13" name="user_age">
+            <label for="over_13" class="light">Overr 13</label>
+
+        <label for="experience">Previous experience</label>
+        <textarea type="text" name="user_bio" id="experience"> </textarea>
+
+        <label="favorite">Favorite Dance:</label>
+        <select id="favorite" name="favorite_dance">
+            <optgroup label="softshoe">
+                <option value="Reel">Reel</option>
+                <option value="Jig">Light Jig</option>
+                <option value="Slipjig">Slip Jig</option>
+             </optgroup>
+            <optgroup label="hardshoe">
+                <option value="Trad">Traditional Set</option>
+                <option value="hornpipe">Hornpip</option>
+            </optgroup>
+
+        </select>
+        <br>
+        <label>Terms and Conditions</label>
+        
+        <input type="checkbox" id="terms" value="terms_agree">
+
+
+            </fieldset>
+        <button type="submit">Sign</button> 
+
+    </form>
     
     <footer>
         <h3>Insta</h3>
