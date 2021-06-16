@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&display=swap" rel="stylesheet">
+    
+    
+    <title>Registration</title>
+</head>
+<body>
+    
+
+<form action="index.html" method="post" name="registration_form">
+        
+    <h1>Register Now</h1>
+    
+    <fieldset>
+        <legend> <span class="number"></span>Dancer Info</legend>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="user_name"><br>
+
+    <label for="dob">Date of birth</label>
+    <input type="date" id="dob" name="dancer_dob"><br>
+
+    <label for="age">Dancer age</label>
+    <input type="text" id="age" name="user_age">
+
+        </fieldset>
+
+    <fieldset> 
+        <legend> <span class="number">2</span>Previous Experience</legend>   
+    <label for="email">Email</label>
+    <input type="email" id="email" name="user_email"><br>
+
+    <label>Age</label>
+        <input type="radio" id="under_13" value="under_13" name="user_age">
+        <label for="under_13" class="light">Under 13</label> <br>
+
+        <input type="radio" id="over_13" value="over_13" name="user_age">
+        <label for="over_13" class="light">Overr 13</label>
+
+    <label for="experience">Previous experience</label>
+    <textarea type="text" name="user_bio" id="experience"> </textarea>
+
+    <label="favorite">Favorite Dance:</label>
+    <select id="favorite" name="favorite_dance">
+        <optgroup label="softshoe">
+            <option value="Reel">Reel</option>
+            <option value="Jig">Light Jig</option>
+            <option value="Slipjig">Slip Jig</option>
+         </optgroup>
+        <optgroup label="hardshoe">
+            <option value="Trad">Traditional Set</option>
+            <option value="hornpipe">Hornpip</option>
+        </optgroup>
+
+    </select>
+    <br>
+    <label>Terms and Conditions</label>
+    
+    <input type="checkbox" id="terms" value="terms_agree">
+
+
+        </fieldset>
+
+
+    <button type="submit" onclick="validate(event)">Submit</button> 
+    
+    <script src="script.js"></script>
+
+</form>
+
+</body>
+</html>

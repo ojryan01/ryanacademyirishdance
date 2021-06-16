@@ -24,6 +24,15 @@ text-align: center;
 
 }
 
+h1 {
+
+font-family: 'Assistant', sans-serif;
+font-size: 3rem;
+color: #d6e04d;
+text-align: center;
+
+}
+
 .banner {  
 font-family: 'Assistant', sans-serif;
 font-size: 3rem;
@@ -35,8 +44,9 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 
-h2 {
-    color: 
+.why {
+    font-family: 'Assistant', sans-serif;
+
 }
 
 img {

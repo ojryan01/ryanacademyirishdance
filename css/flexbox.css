@@ -17,6 +17,11 @@ body {
     min-height: 100vh;
 }
 
+.why {
+
+    display: flex;
+}
+
 /* Media Queries */
 
 @media (min-width: 769px) {
