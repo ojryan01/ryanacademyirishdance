@@ -1,9 +1,15 @@
+/* Mobile Styles */
+
 .nav {
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
+}
+
+.logo {
+    display: flex;
 }
 
 a {
@@ -18,8 +24,8 @@ body {
 }
 
 .why {
-
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* Media Queries */
