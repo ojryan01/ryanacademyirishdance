@@ -7,22 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="css/flexbox.css">
+    <!-- Link to fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&display=swap" rel="stylesheet">
     <title>The Ryan Academy of Irish Dance</title>
+    <script src="script.js"></script>
+    <!-- Link to icons -->
+    <script src="https://kit.fontawesome.com/0806c254df.js" crossorigin="anonymous"></script>
+
 </head>
 
 
 <body>
+    
+      
+    <!-- Top Nav -->
+       
     <header class="header">
-        <img class="logo" src="images/Solid logo.png">
+                    <img class="logo" src="images/Solid logo.png">
 
-        <nav class="nav">
-            <a href="google.com"> Home > </a>
-            <a href="google.com"> About > </a>
-            <a href="google.com"> Classes > </a>
-            <a href="google.com"> Performances > </a>
-         </nav>
+    <!-- Navigation Links -->
+
+    
+
+    <nav class="nav">
+            <div id="mylinks">
+                <a class="navlinks" href="google.com"> home</a>
+                <a class="navlinks" href="google.com"> about</a>             
+                <a class="navlinks" href="google.com"> classes</a>
+                <a class="navlinks" href="google.com"> performances</a>
+            </div>
+    
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
+        <a href="javascript:" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </nav>     
 
     </header>
 
@@ -30,7 +52,7 @@
     <h1>
         fostering integrity. <br> preserving tradition. <br>
                 </h1>
-                <a class = "register" href="google.com"> REGISTER NOW </a>
+                <a class = "btn" href="google.com"> REGISTER NOW </a>
            </div>
     
            <h1> Why Irish Dance?</h1>

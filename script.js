@@ -8,3 +8,16 @@ function validate(event) {
 if (document.registration_form.name.value === "")
     alert('Please enter your name')
 }
+
+
+
+ //try hamburger menu
+
+function myFunction() {
+  var x = document.getElementById("mylinks");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}

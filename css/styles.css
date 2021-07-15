@@ -19,24 +19,49 @@ Make sticky header. need to add js to react to scroll position (onscroll)
 
 .nav {
     padding: .25rem;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.logo {
-    
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.nav #mylinks {
+    display: none;
+    justify-content: space-around;
 }
+
+/* Style hamburger */
+
+.navlinks {
+    padding: auto;
+    margin: 5px;
+    display: flex;
+    }
+
+.nav a.icon {
+    display: block;
+    position: absolute;
+    padding: 15px;   
+    margin: 5px;
+    right: 0;
+    top: 0;
+    background: transparent;
+    /* color: #d6e04d; */
+    color: #ccf381;
+    font-size: 1.5rem;
+}
+
 
 a {
-padding: 15px;   
-margin: 5px;
 background-color:transparent;
-border-color: #d6e04d;
+/* border-color: #d6e04d; */
 border-radius: 5px;
 color: rgba(112,112,112,.6);
 text-align: center;
 font-family: 'Assistant', sans-serif;
 text-decoration: none; /*remove underline*/
 }
+
+
 
 p {
 color: rgba(112,112,112,.6);
@@ -46,23 +71,27 @@ h1 {
 
 font-family: 'Assistant', sans-serif;
 font-size: 1.5rem;
-color: #d6e04d;
+font-weight: bold;
+/*color: #d6e04d;*/
+color: #ccf381;
 text-align: center;
-padding: 2rem .5rem 2rem .5rem;
+padding: .5rem .5rem .5rem .5rem;
 line-height: 2rem;
 
 
 }
 
 h2 {
-   color:#4667eb;
+   /* color:#4667eb; */
+   color: #4831d4;
    font-size: 1rem;
 }
 
 .banner {  
 font-family: 'Assistant', sans-serif;
 font-size: 1rem;
-color: #d6e04d;
+/* color: #d6e04d; */
+color: #ccf381;
 text-align: center;
 padding: 2rem 2rem 2rem 2rem;
 background-image: url("../images/P9230932.JPG");
@@ -71,10 +100,11 @@ background-repeat: no-repeat;
 
 }
 
-.register {
+.btn {
     color:white;
     font-size: 1rem;
     padding: 1rem 2rem 1rem 2rem;
+    font-weight: bold;
     display: block;
     border-color: white;
     border-width: 2.5px;
@@ -87,14 +117,13 @@ background-repeat: no-repeat;
 }
 
 img  {
-    display: block;
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    }
 
 .social {
     display: inline-block;
@@ -105,6 +134,26 @@ img  {
 
 /* Media Queries */
 
-@media screen and (min-width: 321px) {
-    
+@media screen and (min-width: 640px) {
+
+    .nav a.icon {
+        display: none;
+    }
+
+    .nav #mylinks {
+        display: flex;
+        justify-content: space-around;
+    }
+        
+    .navlinks {
+        padding: auto;
+        margin: rem;
+        display: flex;
+        color: #4831d4;
+        }
+
+    a:hover {
+        color: #4831d4;
+        font-weight: bold;
+        } 
 }
