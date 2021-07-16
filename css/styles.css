@@ -33,8 +33,7 @@ Make sticky header. need to add js to react to scroll position (onscroll)
 
 .navlinks {
     padding: auto;
-    margin: 5px;
-    display: flex;
+    margin: 5px;    
     }
 
 .nav a.icon {
@@ -45,76 +44,71 @@ Make sticky header. need to add js to react to scroll position (onscroll)
     right: 0;
     top: 0;
     background: transparent;
-    /* color: #d6e04d; */
     color: #ccf381;
     font-size: 1.5rem;
 }
 
 
 a {
-background-color:transparent;
-/* border-color: #d6e04d; */
-border-radius: 5px;
-color: rgba(112,112,112,.6);
-text-align: center;
-font-family: 'Assistant', sans-serif;
-text-decoration: none; /*remove underline*/
+    background-color:transparent;
+    /* border-color: #d6e04d; */
+    border-radius: 5px;
+    color: rgba(112,112,112,.6);
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    text-decoration: none; /*remove underline*/
 }
 
-
-
 p {
-color: rgba(112,112,112,.6);
+    color: rgba(112,112,112,.6);
 }
 
 h1 {
-
-font-family: 'Assistant', sans-serif;
-font-size: 1.5rem;
-font-weight: bold;
-/*color: #d6e04d;*/
-color: #ccf381;
-text-align: center;
-padding: .5rem .5rem .5rem .5rem;
-line-height: 2rem;
-
-
-}
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ccf381;
+    text-align: center;
+    padding: .5rem .5rem .5rem .5rem;
+    line-height: 2rem;
+    margin-block-end: 1em;
+    }
 
 h2 {
-   /* color:#4667eb; */
-   color: #4831d4;
-   font-size: 1rem;
-}
+    color: #4831d4;
+    font-size: 1rem;
+    }
 
 .banner {  
-font-family: 'Assistant', sans-serif;
-font-size: 1rem;
-/* color: #d6e04d; */
-color: #ccf381;
-text-align: center;
-padding: 2rem 2rem 2rem 2rem;
-background-image: url("../images/P9230932.JPG");
-background-size: cover;
-background-repeat: no-repeat;
-
-}
+    font-family: 'Assistant', sans-serif;
+    font-size: 1rem;
+    color: #ccf381;
+    text-align: center;
+    padding: 2rem 2rem 2rem 2rem;
+    background-image: url("../images/P9230932.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-block-end: 1em;
+    
+    }
 
 .btn {
     color:white;
     font-size: 1rem;
     padding: 1rem 2rem 1rem 2rem;
     font-weight: bold;
-    display: block;
     border-color: white;
     border-width: 2.5px;
     border-style: solid;
- }
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+    }
 
 .why {
     font-family: 'Assistant', sans-serif;
-
-}
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    }
 
 img  {
     max-width: 40%;
@@ -126,11 +120,8 @@ img  {
     }
 
 .social {
-    display: inline-block;
-    max-width: 25%;
-    margin-left: auto;
-    margin-right: auto;
-}
+    max-width: 15%;
+  }
 
 /* Media Queries */
 
@@ -148,7 +139,6 @@ img  {
     .navlinks {
         padding: auto;
         margin: rem;
-        display: flex;
         color: #4831d4;
         }
 

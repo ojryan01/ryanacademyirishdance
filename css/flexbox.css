@@ -12,8 +12,13 @@
     display: flex;
 }
 
+.banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 a {
-    flex-basis: 100px;
     flex-grow: 1;
     }
 
@@ -25,10 +30,18 @@ body {
 
 .why {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Media Queries */
+
 
 
 /* Links are inline with logo */
@@ -52,6 +65,11 @@ header {
 
 .mylinks {
     display: inline-flex;
+}
+
+.why {
+    display: flex;
+    flex-direction: row;
 }
 
 }
