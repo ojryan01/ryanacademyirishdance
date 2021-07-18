@@ -9,8 +9,6 @@ if (document.registration_form.name.value === "")
     alert('Please enter your name')
 }
 
-
-
  //try hamburger menu
 
 function myFunction() {

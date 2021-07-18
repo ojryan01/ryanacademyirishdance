@@ -36,9 +36,10 @@ body {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0px auto;
     align-items: center;
-}
+    }
 
 /* Media Queries */
 
@@ -70,6 +71,10 @@ header {
 .why {
     display: flex;
     flex-direction: row;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
 }
 
 }

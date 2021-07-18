@@ -3,18 +3,23 @@
     box-sizing: border-box;
 }
 
-/*
+
 .header {
 
-Make sticky header. need to add js to react to scroll position (onscroll)
+/* Make sticky header. need to add js to react to scroll position (onscroll) */
 
-    position: fixed;
+    position: sticky;
     top: 0;
 }
-*/
+
+.content {
+    padding: 100px 0px 0px 0px;
+}
+
 
 .header, .nav {
-    background-color: transparent;
+    background-color: white;
+    padding-top: 10px;
 }
 
 .nav {
@@ -110,6 +115,12 @@ h2 {
     margin-bottom: 2rem;
     }
 
+.reasons {
+    margin: 10px;
+    padding: 10px;
+    min-width: 250px;
+}
+
 img  {
     max-width: 40%;
     height: auto;
@@ -121,7 +132,13 @@ img  {
 
 .social {
     max-width: 15%;
-  }
+    padding: .25em;
+      }
+
+footer {
+    font-size: 2em;
+    max-width: 40%;
+    }   
 
 /* Media Queries */
 
