@@ -8,7 +8,7 @@
     justify-content: center;
 }
 
-.logo {
+#logo {
     display: flex;
 }
 
@@ -58,11 +58,11 @@ header {
     align-items: center;
 }
 
-.logo {
-
+#logo {
     display: flex;
     justify-content: center;
 }
+
 #mylinks {
     display: flex !important;
 }

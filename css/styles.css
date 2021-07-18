@@ -27,7 +27,6 @@
     display: none;
     justify-content: space-between;
     flex: 1;
-    padding-bottom: 1.25em;
         }
 
 /* Style hamburger */
@@ -88,6 +87,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     margin-block-end: 1em;
+    margin-top: 1em;
     
     }
 
@@ -116,13 +116,13 @@ h2 {
 }
 
 img  {
-    max-width: 40%;
+    max-width: 25%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     padding-top: .5rem;
-    padding-bottom: .5rem;
-    }
+    padding-bottom: 1rem;
+        }
 
 .social {
     max-width: 15%;
