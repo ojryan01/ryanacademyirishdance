@@ -3,9 +3,9 @@
 .nav {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
     height: auto;
-    justify-content: space-around;
-    align-items: right;
+    justify-content: center;
 }
 
 .logo {
@@ -49,8 +49,8 @@ footer {
 
 @media (min-width: 640px) {
 
-    header, img {
-display: flex
+header, img {
+    display: flex
 }
 
 header {
@@ -60,12 +60,11 @@ header {
 
 .logo {
 
-    display: inline-flex;
+    display: flex;
     justify-content: center;
 }
-
-.mylinks {
-    display: inline-flex;
+#mylinks {
+    display: flex !important;
 }
 
 .why {

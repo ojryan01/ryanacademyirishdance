@@ -15,7 +15,7 @@ function myFunction() {
   var x = document.getElementById("mylinks");
   if (x.style.display === "flex") {
     x.style.display = "none";
-  } else {
+      } else {
     x.style.display = "flex";
-  }
+      }
 }
