@@ -6,7 +6,7 @@
 
 .header {
 
-/* Make sticky header. need to add js to react to scroll position (onscroll) */
+/* Make sticky header*/
 
     position: sticky;
     top: 0;
@@ -19,11 +19,19 @@
 
 .nav {
     
+        margin-bottom: 1em;
+
     }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
+/* Hide the links inside the navigation menu */
 
-#mylinks {
+#mylinksleft {
+    display: none;
+    justify-content: space-between;
+    flex: 1;
+        }
+
+#mylinksright {
     display: none;
     justify-content: space-between;
     flex: 1;
@@ -118,10 +126,10 @@ h2 {
 img  {
     max-width: 25%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: .5rem;
-    padding-bottom: 1rem;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: .75rem;
+    padding-bottom: .5rem;
         }
 
 .social {
@@ -142,9 +150,24 @@ footer {
         display: none;
     }
 
-    .nav #mylinks {
-          justify-content: space-around;
+    img  {
+        max-width: 25%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: .75rem;
+        padding-bottom: .5rem;
+            }
+
+    .nav #mylinksleft {
+          justify-content: space-between;
+          align-items: center;
     }
+
+    .nav #mylinksright {
+        justify-content: space-between;
+        align-items: center;
+  }
         
     .navlinks {
         padding: auto;

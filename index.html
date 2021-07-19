@@ -21,21 +21,27 @@
 <!-- Top Nav -->
     
 <header class="header">
-                <img id="logo" src="images/Solid logo.png">
+                
 
 <!-- Navigation Links -->
 
 <nav class="nav">
-    <div id="mylinks">
+
+    <div id="mylinksleft">
         <a class="navlinks" href="google.com"> home</a>
         <a class="navlinks" href="google.com"> about</a>             
+    </div>
+
+    <img id="logo" src="images/Solid logo.png">
+
+    <div id="mylinksright">        
         <a class="navlinks" href="google.com"> classes</a>
         <a class="navlinks" href="google.com"> performances</a>
     </div>
 
 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
 
-    <a href="javascript:" class="icon" onclick="myFunction()">
+    <a href="javascript:" class="icon" onclick="myFunctionleft(); myFunctionright();">
         <i class="fa fa-bars"></i>
     </a>
 

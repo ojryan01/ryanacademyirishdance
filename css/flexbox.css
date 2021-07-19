@@ -1,15 +1,16 @@
 /* Mobile Styles */
 
+
 .nav {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
     height: auto;
     justify-content: center;
-}
+  }
 
 #logo {
-    display: flex;
+    order: -1;
+    flex-basis: 100%;
 }
 
 .banner {
@@ -44,27 +45,33 @@ footer {
 /* Media Queries */
 
 
-
 /* Links are inline with logo */
 
 @media (min-width: 640px) {
 
-header, img {
+/* header, img {
     display: flex
-}
+} */
 
 header {
+    display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 #logo {
-    display: flex;
     justify-content: center;
+    order: 0;
 }
 
-#mylinks {
+#mylinksleft {
     display: flex !important;
+    justify-self: flex-start;
+}
+
+#mylinksright {
+    display: flex !important;
+    justify-self: flex-end;
 }
 
 .why {

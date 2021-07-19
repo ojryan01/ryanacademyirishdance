@@ -11,8 +11,17 @@ if (document.registration_form.name.value === "")
 
  //try hamburger menu
 
-function myFunction() {
-  var x = document.getElementById("mylinks");
+function myFunctionleft() {
+  var x = document.getElementById("mylinksleft");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+      } else {
+    x.style.display = "flex";
+      }
+}
+
+function myFunctionright() {
+  var x = document.getElementById("mylinksright");
   if (x.style.display === "flex") {
     x.style.display = "none";
       } else {
