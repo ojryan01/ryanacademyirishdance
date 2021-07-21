@@ -5,81 +5,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="css/flexbox.css">
+    <!-- Link to fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&display=swap" rel="stylesheet">
-    
-    
-    <title>Registration</title>
+    <title>The Ryan Academy of Irish Dance</title>
+    <script src="script.js"></script>
+    <!-- Link to icons -->
+    <script src="https://kit.fontawesome.com/0806c254df.js" crossorigin="anonymous"></script>
 </head>
+
+
+
 <body>
     
-
-<form action="index.html" method="post" name="registration_form">
-        
-    <h1>Register Now</h1>
+    <header class="header">
+                
+        <nav class="nav">
     
+            <div id="mylinksleft">
+                <a class="navlinks" href="index.html"> home</a>
+                <a class="navlinks" href="about.html"> about</a>             
+            </div>
+    
+            <img id="logo" src="images/Solid logo.png">
+    
+            <div id="mylinksright">        
+                <a class="navlinks" href="google.com"> classes</a>
+                <a class="navlinks" href="registration.html"> contact</a>
+            </div>
+    
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    
+            <a href="javascript:" class="icon" onclick="myFunctionleft(); myFunctionright();">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>     
+    </header>
+
+    <div class="bannerreg">  
+        <h1>
+            questions?<br>send us a note.
+                    </h1>
+                    <a class = "btn" href="about.html"> LEARN MORE </a>
+        </div>
+    
+
+<form class="contact" action="index.html" method="post" name="registration_form">
+        
     <fieldset>
-        <legend> <span class="number"></span>Dancer Info</legend>
+        <legend> <span class="number"></span>Your Info</legend>
 
     <label for="name">Name</label>
     <input type="text" id="name" name="user_name"><br>
 
-    <label for="dob">Date of birth</label>
-    <input type="date" id="dob" name="dancer_dob"><br>
-
-    <label for="age">Dancer age</label>
-    <input type="text" id="age" name="user_age">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="user_email">
 
         </fieldset>
+
 
     <fieldset> 
-        <legend> <span class="number">2</span>Previous Experience</legend>   
-    <label for="email">Email</label>
-    <input type="email" id="email" name="user_email"><br>
-
-    <label>Age</label>
-        <input type="radio" id="under_13" value="under_13" name="user_age">
-        <label for="under_13" class="light">Under 13</label> <br>
-
-        <input type="radio" id="over_13" value="over_13" name="user_age">
-        <label for="over_13" class="light">Overr 13</label>
-
-    <label for="experience">Previous experience</label>
-    <textarea type="text" name="user_bio" id="experience"> </textarea>
-
-    <label="favorite">Favorite Dance:</label>
-    <select id="favorite" name="favorite_dance">
-        <optgroup label="softshoe">
-            <option value="Reel">Reel</option>
-            <option value="Jig">Light Jig</option>
-            <option value="Slipjig">Slip Jig</option>
-         </optgroup>
-        <optgroup label="hardshoe">
-            <option value="Trad">Traditional Set</option>
-            <option value="hornpipe">Hornpip</option>
-        </optgroup>
-
-    </select>
-    <br>
-    <label>Terms and Conditions</label>
+        <legend> <span class="number"></span>How can we help?</legend>   
     
-    <input type="checkbox" id="terms" value="terms_agree">
+        <label="favorite">My question is about...</label>
+       
+        <select id="type" name="question_type">
+                <option value="adults">Classes for adults</option>
+                <option value="kids">Classes for kids</option>
+                <option value="performance">Request a performance</option>
+                <option value="trial">Schedule a trial class</option>
+                <option value="other">Other</option>
+            </select>
+        <br>
 
+        <label for="question">Type your question below</label>
+        <textarea type="text" name="queston" id="question"> </textarea>
 
-        </fieldset>
+         </fieldset>
 
-
-    <button type="submit" onclick="validate(event)">Submit</button> 
+    <button class="btnpurple" type="submit" onclick="validate(event)">Submit</button> 
     
     <script src="script.js"></script>
 
 </form>
+
+<footer>
+
+    <a class="social" href="https://www.instagram.com/ryanacademyirishdance/">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a class="social" href="https://www.facebook.com/RyanAcademyIrishDance">
+        <i class="fab fa-facebook-square"></i>
+    </a>
+
+    <a class="social" href="https://twitter.com/TheRyanAcademy">
+        <i class="fab fa-twitter-square"></i>
+    </a>
+    
+    </footer> 
+
 
 </body>
 </html>

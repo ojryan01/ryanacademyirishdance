@@ -1,47 +1,43 @@
 
 * {
     box-sizing: border-box;
+    background-color: #fafafa;
 }
 
+/* Standard mobile styling (<640px)*/
 
 .header {
-
 /* Make sticky header*/
-
     position: sticky;
     top: 0;
 }
 
 .header, .nav {
-    background-color: white;
+    background-color: #fafafa;
     padding-top: 10px;
 }
 
-.nav {
+.navlinksleft, .navlinksright {
     
-        margin-bottom: 1em;
-
     }
 
-/* Hide the links inside the navigation menu */
+/* Hide the links inside the navigation menu by default*/
 
 #mylinksleft {
     display: none;
     justify-content: space-between;
+    margin-top: .5em;
     flex: 1;
         }
 
 #mylinksright {
     display: none;
     justify-content: space-between;
+    margin-top: .5em;
     flex: 1;
         }
 
 /* Style hamburger */
-
-.navlinks {
-     
-    }
 
 .nav a.icon {
     display: block;
@@ -58,11 +54,14 @@
 a {
     background-color:transparent;
     /* border-color: #d6e04d; */
-    border-radius: 5px;
     color: rgba(112,112,112,.6);
     text-align: center;
     font-family: 'Assistant', sans-serif;
     text-decoration: none; /*remove underline*/
+}
+
+a.visited {
+    color: #ccf381;
 }
 
 p {
@@ -73,11 +72,11 @@ h1 {
     font-family: 'Assistant', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
+    background-color: transparent ;
     color: #ccf381;
     text-align: center;
     padding: .5rem .5rem .5rem .5rem;
     line-height: 2rem;
-    margin-block-end: 1em;
     }
 
 h2 {
@@ -91,12 +90,46 @@ h2 {
     color: #ccf381;
     text-align: center;
     padding: 2rem 2rem 2rem 2rem;
-    background-image: url("../images/P9230932.JPG");
+    background-image: linear-gradient(to bottom, #4831d4ab, #ccf3818f),
+    url("../images/P9230932.JPG");
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 15px 15px 0px 0px;
+    /* background-blend-mode: hard-light; */
     margin-block-end: 1em;
     margin-top: 1em;
-    
+    }
+
+.bannerreg {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1rem;
+    color: #ccf381;
+    text-align: center;
+    padding: 2rem 2rem 2rem 2rem;
+    background-image: linear-gradient(to bottom, #4831d4ab, #ccf3818f),
+    url("../images/cc\ CROSS.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 15px 15px 0px 0px;
+    margin-block-end: 1em;
+    margin-top: 1em;
+}
+
+.btnpurple {
+    color:#4831d4;
+    font-size: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
+    font-weight: bold;
+    border-color: #4831d4;
+    border-width: 2.5px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
     }
 
 .btn {
@@ -107,6 +140,7 @@ h2 {
     border-color: white;
     border-width: 2.5px;
     border-style: solid;
+    border-radius: 5px;
     margin-block-start: 1.5em;
     margin-block-end: 1.5em;
     }
@@ -132,6 +166,10 @@ img  {
     padding-bottom: .5rem;
         }
 
+.logo {
+    filter: hue-
+}
+
 .social {
     max-width: 15%;
     padding: .25em;
@@ -142,10 +180,22 @@ footer {
     max-width: 40%;
     }   
 
+.contact {
+    font-family: 'Assistant', sans-serif;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 640px) {
 
+    h1 {
+        font-family: 'Assistant', sans-serif;
+        font-size: 3rem;
+        padding: .5rem .5rem .5rem .5rem;
+        line-height: 4rem;
+        }
+    
+    
     .nav a.icon {
         display: none;
     }
@@ -153,30 +203,53 @@ footer {
     img  {
         max-width: 25%;
         height: auto;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 3rem;
+        margin-right: 3rem;
         padding-top: .75rem;
         padding-bottom: .5rem;
             }
 
-    .nav #mylinksleft {
+    #mylinksleft {
           justify-content: space-between;
           align-items: center;
+          
     }
 
-    .nav #mylinksright {
+    #mylinksright {
         justify-content: space-between;
         align-items: center;
   }
         
     .navlinks {
-        padding: auto;
-        margin: rem;
-        color: #4831d4;
-        }
-
-    a:hover {
+        padding: .25rem;
+        margin: 0rem;
         color: #4831d4;
         font-weight: bold;
+        text-align: center;
+        }
+
+    .navlinks:hover {
+        color: #ccf381;
+        font-weight: bolder;
         } 
-}
+    
+    .why {
+        margin: 0em 2em 2em 2em;
+      
+    }
+
+
+@media screen and (min-width: 925px) {
+    .why {
+        font-family: 'Assistant', sans-serif;
+        margin: 0em 2em 2em 2em
+            }
+
+    .reasons {
+        font-family: 'Assistant', sans-serif;
+        flex-grow: 0                ;
+        margin: 0px;
+        padding: .5em;
+        min-width: 100px;
+    }
+    }
