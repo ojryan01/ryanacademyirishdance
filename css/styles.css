@@ -184,6 +184,13 @@ footer {
     font-family: 'Assistant', sans-serif;
 }
 
+/* Style the form fields */
+input[type=text], input[type=email] {
+    padding: 10px;
+    /* margin: 10px 0; */
+    border-radius: 5px;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 640px) {
