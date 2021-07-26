@@ -53,23 +53,23 @@
     
 
 <form class="contact" action="index.html" method="post" name="registration_form">
-        
+      
     <fieldset>
-        <legend><h2>YOUR INFO</h2></legend>
+        <legend>YOUR INFO</legend>
 
-    <label for="name"><p>Name</p></label>
+    <label for="name">Name</label>
     <input type="text" id="name" name="user_name">
 
-    <label for="email"><p>Email</p></label>
+    <label for="email">Email</label>
     <input type="email" id="email" name="user_email">
 
         </fieldset>
 
 
     <fieldset> 
-        <legend><H2>HOW CAN WE HELP?</H2></legend>   
+        <legend>HOW CAN WE HELP?</legend>   
     
-        <label="favorite" class="form"><p>My question is about...</p></label>
+        <label id="favorite" class="form">My question is about...</label>
        
         <select id="type" name="question_type">
                 <option value="adults">Classes for adults</option>
@@ -78,8 +78,7 @@
                 <option value="trial">Schedule a trial class</option>
                 <option value="other">Other</option>
             </select>
-        <br>
-
+     
         <label for="question">Type your question below</label>
         <textarea type="text" name="queston" id="question"> </textarea>
 
