@@ -41,87 +41,69 @@ footer {
     align-items: center;
     }
 
-.about {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.contact, #contact, fieldset, legend {
+.contact, fieldset, legend {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    }
-
-#display, .formresults {
-    /* display: flex; */
     }
 
 /* Media Queries */
+
 
 /* Links are inline with logo */
 
 @media (min-width: 640px) {
 
-
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#logo {
-    justify-content: center;
-    order: 0;
-}
-
-#mylinksleft {
-    display: flex !important;
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
-#mylinksright {
-    display: flex !important;
+    #logo {
+        justify-content: center;
+        order: 0;
     }
 
-.why {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    #mylinksleft {
+        display: flex !important;
+        }
+
+    #mylinksright {
+        display: flex !important;
+        }
+
+    .why {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .reasons {
+        flex-basis: 35%;
+    }
+
 }
 
-.reasons {
-    flex-basis: 35%;
-  }
-
-}
-
-.about {
-    display: block;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-}
 
 @media (min-width: 925px) {
 
-header, img {
-display: flex
-}
+    header, img {
+    display: flex
+    }
 
-header {
-    flex-direction: row;
-    justify-content: space-between;
-}
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-.why {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
+    .why {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
 
-.reasons {
-     min-width: 0px;
 }
 

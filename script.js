@@ -21,6 +21,9 @@ function results() {
   var email = document.getElementById('email').value;
   var type = document.getElementById('type').value;
   var question = document.getElementById('question').value;
+  var help = document.getElementById("help");
+  var info = document.getElementById("info");
+  var submit = document.getElementById("submit");
   
   console.log(name, email, type, question);
 
@@ -33,6 +36,10 @@ function results() {
     <h2>QUESTION:</h2>
     <p>${question}</p>
     <h2 class="thanks">WE RECEIVED YOUR MESSAGE AND WILL CONTACT YOU SOON!</h2>`;
+
+  help.style.display = "none";
+  info.style.display = "none";
+  submit.style.display = "none";
 
 }
 
