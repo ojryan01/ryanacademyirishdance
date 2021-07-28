@@ -290,6 +290,10 @@ article {
     .why {
         margin: 0em 2em 2em 2em;
         }
+    
+    .btnpurple {
+        margin: 1rem 14rem 1rem 14rem
+        }
 
     #headshot {
         max-width: 50%;
@@ -312,5 +316,5 @@ article {
         margin: 0px;
         padding: .5em;
         min-width: 100px;
-    }
+        }
     }
