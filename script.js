@@ -26,12 +26,13 @@ function results() {
 
   document.getElementById('display').innerHTML = 
   
-    `<h2>THANKS FOR GETTING IN TOUCH!</h2> 
+    `<h2 class="thanks">THANKS FOR GETTING IN TOUCH!</h2> 
     <h2>NAME:</h2><p>${name}</p>
     <h2>EMAIL:</h2><p>${email}</p>
     <h2>SUBJECT:</h2><p>${type}</p>
     <h2>QUESTION:</h2>
-    <p>${question}</p>`;
+    <p>${question}</p>
+    <h2 class="thanks">WE RECEIVED YOUR MESSAGE AND WILL CONTACT YOU SOON!</h2>`;
 
 }
 

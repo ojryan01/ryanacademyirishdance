@@ -41,7 +41,13 @@ footer {
     align-items: center;
     }
 
-.contact, #contact, fieldset, legend, .about {
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact, #contact, fieldset, legend {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +64,7 @@ footer {
 @media (min-width: 640px) {
 
 
-header, .about {
+header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -90,9 +96,16 @@ header, .about {
 
 }
 
+.about {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
 @media (min-width: 925px) {
 
-    header, img {
+header, img {
 display: flex
 }
 
@@ -109,7 +122,6 @@ header {
 }
 
 .reasons {
-     }
-
+     min-width: 0px;
 }
 
