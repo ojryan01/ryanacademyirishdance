@@ -41,21 +41,24 @@ footer {
     align-items: center;
     }
 
-.contact, fieldset, legend {
+.contact, #contact, fieldset, legend, .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     }
 
-/* Media Queries */
+#display, .formresults {
+    /* display: flex; */
+    }
 
+/* Media Queries */
 
 /* Links are inline with logo */
 
 @media (min-width: 640px) {
 
 
-header {
+header, .about {
     display: flex;
     flex-direction: row;
     align-items: center;

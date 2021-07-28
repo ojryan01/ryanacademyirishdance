@@ -53,8 +53,7 @@ img  {
     font-weight: bold;
     border: 2.5px solid #4831d4;
     border-radius: 5px;
-    margin: 1.5em auto 1.5em auto;
-    max-width: 50%;
+    margin: 1rem 5rem 1rem 5rem;
     }
     
 footer {
@@ -179,7 +178,6 @@ legend {
 }
 
 .social {
-    max-width: 15%;
     padding: .25em;
       }
 
@@ -208,6 +206,19 @@ textarea {
 
 #email {
     margin-bottom: 1.5rem;
+}
+
+.formresults {
+    margin: 1rem 2rem 1rem 2em;
+}
+
+/* About page */
+
+#headshot {
+    max-width: 50%;
+    height: auto;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 /* Media Queries */
@@ -260,6 +271,14 @@ textarea {
     
     .why {
         margin: 0em 2em 2em 2em;
+        }
+
+    #headshot {
+        max-width: 25%;
+        height: auto;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        }
       
     }
 

@@ -52,16 +52,16 @@
         </div>
     
 
-<form class="contact" action="index.html" method="post" name="registration_form">
+<form id="contact" class="contact" action="index.html" method="post" name="registration_form" onSubmit="return results();">
       
     <fieldset>
         <legend>YOUR INFO</legend>
 
     <label for="name">Name</label>
-    <input type="text" id="name" name="user_name">
+    <input type="text" id="name" name="user_name" required>
 
     <label for="email">Email</label>
-    <input type="email" id="email" name="user_email">
+    <input type="email" id="email" name="user_email" required>
 
         </fieldset>
 
@@ -71,7 +71,7 @@
     
         <label id="favorite" class="form">My question is about...</label>
        
-        <select id="type" name="question_type">
+        <select id="type" id="type" name="question_type" required>
                 <option value="adults">Classes for adults</option>
                 <option value="kids">Classes for kids</option>
                 <option value="performance">Request a performance</option>
@@ -80,7 +80,7 @@
             </select>
      
         <label for="question">Type your question below</label>
-        <textarea type="text" name="queston" id="question"> </textarea>
+        <textarea type="text" name="queston" id="question" required> </textarea>
 
          </fieldset>
 
@@ -88,7 +88,13 @@
     
     <script src="script.js"></script>
 
+    <span class="formresults" id='display'></span>
+
 </form>
+
+    
+
+<span id='display'></span>
 
 <footer>
 
