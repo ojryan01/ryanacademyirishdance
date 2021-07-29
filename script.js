@@ -13,7 +13,7 @@ if (document.registration_form.name.value === "") {
         else results();      
 }
 
-// Display form results
+// Validate and Display form results
  
 function results() {
 
@@ -35,7 +35,8 @@ function results() {
     <h2>SUBJECT:</h2><p>${type}</p>
     <h2>QUESTION:</h2>
     <p>${question}</p>
-    <h2 class="thanks">WE RECEIVED YOUR MESSAGE AND WILL CONTACT YOU SOON!</h2>`;
+    <h2 class="thanks">WE RECEIVED YOUR MESSAGE AND WILL CONTACT YOU SOON!</h2>
+    <h2 class= "thanks"><a href="registration.html" id="resetform">CLICK HERE</a> TO RESET FORM</H2>`;
 
   help.style.display = "none";
   info.style.display = "none";

@@ -24,13 +24,13 @@
     
             <div id="mylinksleft">
                 <a class="navlinks" href="index.html"> home</a>
-                <a class="navlinks" href="about.html"> about</a>             
+                <a class="navlinks" href="#"> about</a>             
             </div>
     
             <img id="logo" src="images/Solid logo.png">
     
             <div id="mylinksright">        
-                <a class="navlinks" href="google.com"> classes</a>
+                <a class="navlinks" href="#"> classes</a>
                 <a class="navlinks" href="registration.html"> contact</a>
             </div>
     
@@ -70,11 +70,12 @@
             <label id="favorite" class="form">My question is about...</label>
         
             <select id="type" id="type" name="question_type" required>
-                    <option value="adults">Classes for adults</option>
-                    <option value="kids">Classes for kids</option>
-                    <option value="performance">Request a performance</option>
-                    <option value="trial">Schedule a trial class</option>
-                    <option value="other">Other</option>
+                    <option value="none">Select an Option</option>
+                    <option value="Adult Classes">Classes for adults</option>
+                    <option value="Kids Classes">Classes for kids</option>
+                    <option value="Performance">Request a performance</option>
+                    <option value="Trial Class">Schedule a trial class</option>
+                    <option value="Other">Other</option>
                 </select>
         
             <label for="question">Type your question below</label>
@@ -82,7 +83,7 @@
 
             </fieldset>
 
-        <button class="btnpurple" id="submit" type="submit" onclick="validate(event)">Submit</button> 
+        <button class="btnpurple" id="submit" type="submit" onclick="validate(event)">SUBMIT</button> 
         
         <script src="script.js"></script>
 

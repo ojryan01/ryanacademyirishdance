@@ -60,6 +60,10 @@ FULFILLMENT OF REQUIREMENTS
 
     The **informational cards** which display the school values(confidence, dedication, friendship, tradition) transition from a column > two column > single row layout as the screen width increases from 320px to 640px to 925px.
 
+* ADDITIONAL FEATURES
+
+    The page registration.html contains a **contact form** which allows visitors to select a question after entering their name, email and selecting a question type. I used Javascript to display an alert if either the name or email fields were left blank. After clicking submit, the form data is displayed to the user with a notification that their question was submitted successfully. While the data is not stored or sent, this is representative of the UI that would accompany such functionality. 
+
 ---------------------------------------------------------------
 
 SPECIAL INSTRUCTIONS

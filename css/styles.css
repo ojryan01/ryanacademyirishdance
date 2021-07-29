@@ -226,6 +226,11 @@ span.formresults:empty {
     border-style: none;
 }
 
+#resetform {
+    text-decoration: underline;
+    color: #4831d4;
+}
+
 /* About page */
 
 #headshot {
@@ -283,13 +288,26 @@ article {
         text-align: center;
         }
 
-    .navlinks:hover {
+    .navlinks:hover, #resetform:hover {
         color: #ccf381;
         font-weight: bolder;
-        } 
-    
+        }
+        
+   
+    .btn:hover {
+        color: #1d1d1d;
+        background-color: #fff;
+        transition: 0.1s background-color;
+    }
+        
+        .btnpurple:hover {
+        color: #fff;
+        background-color: #4831d4;
+        transition: 0.1s background-color;;
+        }
+        
     .why {
-        margin: 0em 2em 2em 2em;
+    margin: 0em 2em 2em 2em;
         }
     
     .btnpurple {
