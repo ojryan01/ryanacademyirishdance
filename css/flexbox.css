@@ -80,10 +80,16 @@ footer {
         justify-content: space-around;
     }
 
+    .about {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     .reasons {
         flex-basis: 35%;
     }
-
 }
 
 
@@ -104,6 +110,5 @@ footer {
         flex-wrap: nowrap;
         justify-content: space-around;
     }
-
 }
 

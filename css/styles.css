@@ -231,12 +231,48 @@ span.formresults:empty {
     color: #4831d4;
 }
 
+/* Style the classes table */
+
+thead th {
+    font-weight: 400;
+    background: #8a97a0;
+    color: #FFF;
+  }
+  
+  tr {
+    background: #f4f7f8;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 5px;
+  }
+  
+  tr:nth-child(even) {
+    background: #e8eeef;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 20px;
+    font-weight: 300;
+  }
+  
+  tfoot tr {
+    background: none;
+  }
+  
+  tfoot td {
+    padding: 10px 2px;
+    font-size: 0.8em;
+    font-style: italic;
+    color: #8a97a0;
+  }
+
 /* About page */
 
 #headshot {
-    margin: 1rem auto 1rem auto;
-    padding: .5rem .5rem .5rem .5rem;
+    margin: 1rem auto 0rem auto;
+    padding: 0rem 1rem;
     max-width: 100%;
+    height: fit-content;
     border-radius: 10px;
 }
 
@@ -244,6 +280,10 @@ article {
     font-family: inherit;
     margin: 0rem 1rem 0rem 1rem;  
 }
+
+.aboutheader {
+    margin: 0rem 1rem 0rem 1rem;
+   }
 
 /* Media Queries */
 
@@ -300,14 +340,14 @@ article {
         transition: 0.1s background-color;
     }
         
-        .btnpurple:hover {
+    .btnpurple:hover {
         color: #fff;
         background-color: #4831d4;
-        transition: 0.1s background-color;;
-        }
+        transition: 0.1s background-color;
+    }
         
     .why {
-    margin: 0em 2em 2em 2em;
+         margin: 0em 2em 2em 2em;
         }
     
     .btnpurple {
@@ -315,11 +355,26 @@ article {
         max-width: 50%;
         }
 
+    
+    /* About page */
+
+    .director {
+        margin: 0rem 1rem 0rem 1rem;
+        max-width: 100%;
+    }
+
     #headshot {
-        max-width: 50%;
+        max-width: 30%;
         order: -1;
+        margin: 1rem 1rem 0rem 1rem;
+        padding: 0;
+        align-self: center;
         }
-      
+
+    article {
+        margin: 0rem 1rem 0rem 0rem;
+        max-width: 60%;  
+        } 
     }
 
 
